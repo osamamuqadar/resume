@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import Hero from './components/hero';
+
+import { Outlet } from 'react-router-dom';
+import Header from './components/header';
 
 function App() {
   return (
-    <div className="App">
-      <Hero />
-    </div>
+    <>
+      <Header headerColor={"border border-red-500"}/>
+      
+      <Outlet />
+    </>
+
   );
 }
 
